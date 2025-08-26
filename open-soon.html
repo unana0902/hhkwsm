@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网站建设中...</title>
+    <style>
+        /* 引入一个更具设计感的在线字体 (可选，但推荐) */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap');
+
+        /* --- 整体页面和背景样式 --- */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Noto Serif SC', 'Georgia', 'Times New Roman', serif;
+            overflow: hidden;
+        }
+
+        .background-container {
+            height: 100%;
+            width: 100%;
+            background-image: url('http://googleusercontent.com/file_content/0');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        /* --- 内容容器 --- */
+        .content {
+            position: relative;
+            z-index: 1;
+            color: #f5f5dc; /* Beige */
+            padding: 20px 40px;
+            background-color: rgba(91, 58, 41, 0.25);
+            border-radius: 15px;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(245, 245, 220, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 2.8em;
+            font-weight: 700;
+            text-shadow: 2px 2px 8px rgba(40, 20, 10, 0.9);
+        }
+
+        #score-board {
+            font-size: 1.6em;
+            font-weight: 400;
+            text-shadow: 1px 1px 6px rgba(40, 20, 10, 0.9);
+            margin-bottom: 5px; /* 调整间距 */
+        }
+
+        /* NEW: 游戏介绍样式 */
+        .game-intro {
+            font-size: 1.1em;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 6px rgba(40, 20, 10, 0.9);
+        }
+
+        /* --- 榫卯游戏样式 --- */
+        #game-container {
+            margin-top: 15px;
+            width: 400px;
+            height: 250px;
+            border: 1px solid rgba(222, 184, 135, 0.5);
+            border-radius: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .piece {
+            width: 60px;
+            height: 100px;
+            position: absolute;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .mortise {
+            background-color: #6B4F40;
+            border: 2px solid #5D4037;
+        }
+
+        .mortise::before {
+            content: '';
+            position: absolute; width: 20px; height: 60px; top: 20px; left: 18px;
+            background-color: #5D4037;
+        }
+
+        .tenon {
+            background-color: #D4B996;
+            border: 2px solid #C3A682;
+            cursor: grab;
+            z-index: 10;
+        }
+
+        .tenon::before {
+            content: '';
+            position: absolute; width: 20px; height: 60px; top: 20px; left: 18px;
+            background-color: #C3A682;
+        }
+
+        .dragging {
+            cursor: grabbing;
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        .success {
+            background-color: #556B2F !important;
+            border-color: #6B8E23 !important;
+            cursor: default !important;
+        }
+
+        #message {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #98FB98;
+            font-weight: bold;
+            height: 20px;
+            text-shadow: 1px 1px 4px #000;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="background-container">
+        <div class="content">
+            <h1>匠心营造·敬请期待</h1>
+            <p id="score-board">得分: <span id="score">0</span></p>
+
+            <p class="game-intro">拖动浅色卯头，与深色榫眼契合</p>
+
+            <div id="game-container">
+                </div>
+
+            <div id="message"></div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript 逻辑部分无需改动
+        const gameContainer = document.getElementById('game-container');
+        const message = document.getElementById('message');
+        const scoreDisplay = document.getElementById('score');
+
+        let score = 0;
+        let isDragging = false;
+        let currentTenon = null;
+        let currentMortise = null;
+
+        let offsetX = 0;
+        let offsetY = 0;
+
+        function generateNewPuzzle() {
+            gameContainer.innerHTML = '';
+            message.textContent = '';
+
+            currentTenon = document.createElement('div');
+            currentMortise = document.createElement('div');
+
+            currentTenon.classList.add('piece', 'tenon');
+            currentMortise.classList.add('piece', 'mortise');
+
+            const containerWidth = gameContainer.offsetWidth;
+            const containerHeight = gameContainer.offsetHeight;
+            const pieceWidth = 60;
+            const pieceHeight = 100;
+
+            const leftZone = { minX: 10, maxX: containerWidth / 2 - pieceWidth - 10 };
+            const rightZone = { minX: containerWidth / 2 + 10, maxX: containerWidth - pieceWidth - 10 };
+
+            currentTenon.style.left = Math.random() * (leftZone.maxX - leftZone.minX) + leftZone.minX + 'px';
+            currentTenon.style.top = Math.random() * (containerHeight - pieceHeight) + 'px';
+
+            currentMortise.style.left = Math.random() * (rightZone.maxX - rightZone.minX) + rightZone.minX + 'px';
+            currentMortise.style.top = Math.random() * (containerHeight - pieceHeight) + 'px';
+
+            gameContainer.appendChild(currentMortise);
+            gameContainer.appendChild(currentTenon);
+
+            currentTenon.addEventListener('mousedown', onMouseDown);
+        }
+
+        function onMouseDown(e) {
+            isDragging = true;
+            currentTenon.classList.add('dragging');
+
+            offsetX = e.clientX - currentTenon.getBoundingClientRect().left;
+            offsetY = e.clientY - currentTenon.getBoundingClientRect().top;
+        }
+
+        function onMouseMove(e) {
+            if (!isDragging) return;
+            e.preventDefault();
+
+            const containerRect = gameContainer.getBoundingClientRect();
+            let newLeft = e.clientX - containerRect.left - offsetX;
+            let newTop = e.clientY - containerRect.top - offsetY;
+
+            if (newLeft < 0) newLeft = 0;
+            if (newTop < 0) newTop = 0;
+            if (newLeft + currentTenon.offsetWidth > gameContainer.offsetWidth) {
+                newLeft = gameContainer.offsetWidth - currentTenon.offsetWidth;
+            }
+            if (newTop + currentTenon.offsetHeight > gameContainer.offsetHeight) {
+                newTop = gameContainer.offsetHeight - currentTenon.offsetHeight;
+            }
+
+            currentTenon.style.left = newLeft + 'px';
+            currentTenon.style.top = newTop + 'px';
+        }
+
+        function onMouseUp() {
+            if (!isDragging) return;
+            isDragging = false;
+            currentTenon.classList.remove('dragging');
+
+            const tenonRect = currentTenon.getBoundingClientRect();
+            const mortiseRect = currentMortise.getBoundingClientRect();
+
+            const tolerance = 20;
+            if (Math.abs(tenonRect.left - mortiseRect.left) < tolerance && Math.abs(tenonRect.top - mortiseRect.top) < tolerance) {
+                score++;
+                scoreDisplay.textContent = score;
+                message.textContent = '契合成功！';
+
+                currentTenon.style.left = currentMortise.style.left;
+                currentTenon.style.top = currentMortise.style.top;
+                currentTenon.classList.add('success');
+
+                currentTenon.removeEventListener('mousedown', onMouseDown);
+
+                setTimeout(generateNewPuzzle, 800);
+            }
+        }
+
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+
+        generateNewPuzzle();
+    </script>
+</body>
+</html>
