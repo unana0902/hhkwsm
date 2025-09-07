@@ -134,7 +134,7 @@ h1, h2, h3 {
 }
 
 .main-nav .dropdown-menu li a:hover {
-    background-color: var(--bg-color);
+    background-color: #ffffff;
     color: var(--accent-color);
 }
 
