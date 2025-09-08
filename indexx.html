@@ -1,537 +1,272 @@
 <!DOCTYPE html>
-
 <html lang="zh-CN">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>和合·開物</title>
 
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>和合開物</title>
-
-
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-
-
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-
-
-    <header class="main-header" id="main-header">
-
-        <nav class="navbar">
-
-            <a href="#" class="logo">和合開物</a>
-
-            <div class="main-nav">
-
-                <ul>
-
-                    <li><a href="#about">关于我们</a></li>
-
-                    <li><a href="#shop">商城</a></li>
-
-                    <li class="dropdown">
-
-                        <a href="#products">产品系列</a>
-
-                        <ul class="dropdown-menu">
-
-                            <li><a href="#products">像素榫卯</a></li>
-
-                            <li><a href="#products">生肖礼品</a></li>
-
-                            <li><a href="#products">博物馆文创</a></li>
-
-                            <li><a href="#products">家具</a></li>
-
-                        </ul>
-
-                    </li>
-
-                    <li><a href="#">BLOG</a></li>
-
-                    <li><a href="#collection">设计师作品集</a></li>
-
-                </ul>
-
-                <div class="lang-switcher">
-
-                    <a href="#" class="active">中</a>
-
-                    <a href="#">EN</a>
-
-                    <a href="#">JP</a>
-
-                </div>
-
-            </div>
-
-            <div class="hamburger">
-
-                <div class="line1"></div>
-
-                <div class="line2"></div>
-
-                <div class="line3"></div>
-
-            </div>
-
-        </nav>
-
-        <div class="mobile-nav">
-
-             <ul>
-
-                 <li><a href="#about">关于我们</a></li>
-
-                 <li><a href="#shop">商城</a></li>
-
-                 <li class="mobile-dropdown">
-
-                     <a href="#products" class="dropdown-toggle">产品系列</a>
-
-                     <ul class="mobile-submenu">
-
-                         <li><a href="#products">像素榫卯</a></li>
-
-                         <li><a href="#products">生肖礼品</a></li>
-
-                         <li><a href="#products">博物馆文创</a></li>
-
-                         <li><a href="#products">家具</a></li>
-
-                     </ul>
-
-                 </li>
-
-                 <li><a href="#">BLOG</a></li>
-
-                 <li><a href="#collection">设计师作品集</a></li>
-
-                 <li class="mobile-lang-switcher">
-
-                     <a href="#" class="active">中文</a>
-
-                     <a href="#">English</a>
-
-                     <a href="#">日本語</a>
-
-                 </li>
-
-             </ul>
-
-        </div>
-
-    </header>
-
-
-
-    <main>
-
-        <section class="hero-slider-section">
-
-            <div class="swiper hero-slider">
-
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-
-                        <img src="https://www.hehekaiwu.com/background.webp" alt="榫卯技艺">
-
-                        <div class="hero-content">
-
-                            <h2>承古融今，大匠之心</h2>
-
-                            <p>传承千年榫卯技艺，对话时代审美</p>
-
-                            <a href="#products" class="hero-btn">探索榫卯之美</a>
-
-                        </div>
-
-                         <div class="image-credit">承古融今，大匠之心</div>
-
-                    </div>
-
-                    <div class="swiper-slide">
-
-                        <img src="https://www.hehekaiwu.com/image/background/hehekaiwu-banner2.webp" alt="榫卯拼搭">
-
-                        <div class="hero-content">
-
-                            <h2>智慧启迪，乐在其中</h2>
-
-                            <p>玩转榫卯拼搭，探索无限可能</p>
-
-                            <a href="#about" class="hero-btn">立即体验拼装乐趣</a>
-
-                        </div>
-
-                         <div class="image-credit">智慧启迪，乐在其中</div>
-
-                    </div>
-
-                </div>
-
-                <div class="swiper-button-prev"></div>
-
-                <div class="swiper-button-next"></div>
-
-            </div>
-
-        </section>
-
-
-
-        <section class="product-section" id="products">
-
-            <div class="container">
-
-                <div class="product-tabs">
-
-                    <button class="tab-btn active" data-target="pixel">像素榫卯</button>
-
-                    <button class="tab-btn" data-target="zodiac">生肖礼品</button>
-
-                    <button class="tab-btn" data-target="museum">博物馆文创</button>
-
-                    <button class="tab-btn" data-target="furniture">家具</button>
-
-                </div>
-
-
-
-                <div id="pixel" class="product-content active">
-
-                    <div class="product-grid">
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>像素榫卯·椅</h3><p>传统工艺与现代像素美学的结合。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>像素榫卯·桌</h3><p>简约而不简单，为您的空间增添趣味。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>像素榫卯·灯</h3><p>光与影的像素游戏。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>像素榫卯·架</h3><p>模块化设计，自由组合。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>像素榫卯·凳</h3><p>小巧玲珑，随处安放。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>像素榫卯·屏</h3><p>虚实之间的东方意境。</p></div>
-
-                    </div>
-
-                </div>
-
-
-
-                <div id="zodiac" class="product-content">
-
-                     <div class="product-grid">
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>生肖礼品·鼠</h3><p>机智灵动，开启新年好运。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>生肖礼品·牛</h3><p>勤恳踏实，稳重前行。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>生肖礼品·虎</h3><p>威猛雄壮，尽显王者风范。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>生肖礼品·兔</h3><p>温顺可爱，带来祥和与安宁。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>生肖礼品·龙</h3><p>飞龙在天，寓意吉祥尊贵。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>生肖礼品·蛇</h3><p>智慧的化身，神秘而优雅。</p></div>
-
-                    </div>
-
-                </div>
-
-
-
-                <div id="museum" class="product-content">
-
-                     <div class="product-grid">
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>博物馆文创1</h3><p>机智灵动，开启新年好运。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>博物馆文创2</h3><p>勤恳踏实，稳重前行。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>博物馆文创3</h3><p>威猛雄壮，尽显王者风范。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>博物馆文创4</h3><p>温顺可爱，带来祥和与安宁。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>博物馆文创5</h3><p>飞龙在天，寓意吉祥尊贵。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>博物馆文创6</h3><p>智慧的化身，神秘而优雅。</p></div>
-
-                    </div>
-
-                </div>
-
-
-
-                 <div id="furniture" class="product-content">
-
-                    <div class="product-grid">
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>原木沙发</h3><p>回归自然，享受舒适与宁静。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>禅意睡床</h3><p>简约设计，营造安宁的睡眠环境。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>茶几</h3><p>一茶一世界，一几一人生。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>衣柜</h3><p>极简收纳，让生活井然有序。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>单人椅</h3><p>一个人的角落，静享时光。</p></div>
-
-                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>餐桌</h3><p>承载家人欢聚的温暖时刻。</p></div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <section class="features-section" style="padding:0;">
-
-            <div class="features-grid">
-
-                <div class="feature-item"><img src="https://www.hehekaiwu.com/background.webp" alt="feature 1"><span>匠心设计</span></div>
-
-                <div class="feature-item"><img src="https://www.hehekaiwu.com/background.webp" alt="feature 2"><span>天然材质</span></div>
-
-                <div class="feature-item"><img src="https://www.hehekaiwu.com/background.webp" alt="feature 3"><span>精湛工艺</span></div>
-
-                <div class="feature-item"><img src="https://www.hehekaiwu.com/background.webp" alt="feature 4"><span>持续创新</span></div>
-
-            </div>
-
-        </section>
-
-
-
-        <section class="intro-section" id="about">
-
-            <div class="container">
-
-                <div class="intro-image">
-
-                    <img src="https://www.hehekaiwu.com/image/others/about-hehekaiwu.webp" alt="关于和合开物">
-
-                </div>
-
-                <div class="intro-text">
-
-                    <h2>关于和合開物</h2>
-
-                    <p>和合开物®是一个专注于榫卯创意的文创品牌，以现代设计语言重新诠释传统工艺，致力于将中国榫卯的智慧美学融入当代生活。我们深度携手各大博物馆，挖掘文物内涵，将历史与互动体验巧妙结合，所打造的系列文创产品在业内广受赞誉。</p>
-
-                    <p>2024年，我们重磅推出独创的“像素榫卯”结构，颠覆性地融合了结构与像素几何视觉的完美结合，开创了全新的拼装体验，旨在让每一个人都能轻松感受榫卯的精妙，在创意世界里见证古老智慧的无限可能。</p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-<section class="video-parallax-section">
-
-    <div class="hero-content">
-
-        <h2>探索榫卯的无限可能</h2>
-
-        <p>在每一次拼接中，感受传统工艺的温度与智慧。</p>
-
-    </div>
-
-</section>
-
-
-
-        <section class="collection-section" id="collection">
-
-            <div class="container">
-
-                <div class="section-header">
-
-                    <h2>设计师作品集</h2>
-
-                    <p>我们从世界各地的文化与自然中汲取灵感，每一件作品都是一次对美的探索和诠释。</p>
-
-                </div>
-
-
-
-                <div class="swiper collection-slider">
-
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 1"><h3>光之韵</h3><p>灵感源于日式纸灯笼。</p></div>
-
-                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 2"><h3>空之境</h3><p>留白，是设计的最高境界。</p></div>
-
-                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 3"><h3>木之语</h3><p>倾听每一寸木材的呼吸。</p></div>
-
-                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 4"><h3>石之坚</h3><p>沉稳而富有力量感。</p></div>
-
-                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 5"><h3>竹之节</h3><p>东方君子的气节与风骨。</p></div>
-
-                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 6"><h3>水之形</h3><p>流动线条，无常之美。</p></div>
-
-                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 7"><h3>土之朴</h3><p>返璞归真，陶瓷的温度。</p></div>
-
-                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 8"><h3>金之锐</h3><p>现代金属元素的点睛之笔。</p></div>
-
-                    </div>
-
-                </div>
-
-                <div class="collection-nav">
-
-                    <div class="swiper-button-prev"></div>
-
-                    <div class="swiper-button-next"></div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <section class="social-links-section">
-
-             <div class="container">
-
-                <a href="#" class="social-link-card">
-
-                  <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="Xiaohongshu--Streamline-Simple-Icons" height="40" width="40"><desc>Xiaohongshu Streamline Icon: https://streamlinehq.com</desc><title>Xiaohongshu</title><path d="M22.405 9.879c0.002 0.016 0.01 0.02 0.07 0.019h0.725a0.797 0.797 0 0 0 0.78 -0.972 0.794 0.794 0 0 0 -0.884 -0.618 0.795 0.795 0 0 0 -0.692 0.794c0 0.101 -0.002 0.666 0.001 0.777zm-11.509 4.808c-0.203 0.001 -1.353 0.004 -1.685 0.003a2.528 2.528 0 0 1 -0.766 -0.126 0.025 0.025 0 0 0 -0.03 0.014L7.7 16.127a0.025 0.025 0 0 0 0.01 0.032c0.111 0.06 0.336 0.124 0.495 0.124 0.66 0.01 1.32 0.002 1.981 0 0.01 0 0.02 -0.006 0.023 -0.015l0.712 -1.545a0.025 0.025 0 0 0 -0.024 -0.036zM0.477 9.91c-0.071 0 -0.076 0.002 -0.076 0.01a0.834 0.834 0 0 0 -0.01 0.08c-0.027 0.397 -0.038 0.495 -0.234 3.06 -0.012 0.24 -0.034 0.389 -0.135 0.607 -0.026 0.057 -0.033 0.042 0.003 0.112 0.046 0.092 0.681 1.523 0.787 1.74 0.008 0.015 0.011 0.02 0.017 0.02 0.008 0 0.033 -0.026 0.047 -0.044 0.147 -0.187 0.268 -0.391 0.371 -0.606 0.306 -0.635 0.44 -1.325 0.486 -1.706 0.014 -0.11 0.021 -0.22 0.03 -0.33l0.204 -2.616 0.022 -0.293c0.003 -0.029 0 -0.033 -0.03 -0.034zm7.203 3.757a1.427 1.427 0 0 1 -0.135 -0.607c-0.004 -0.084 -0.031 -0.39 -0.235 -3.06a0.443 0.443 0 0 0 -0.01 -0.082c-0.004 -0.011 -0.052 -0.008 -0.076 -0.008h-1.48c-0.03 0.001 -0.034 0.005 -0.03 0.034l0.021 0.293c0.076 0.982 0.153 1.964 0.233 2.946 0.05 0.4 0.186 1.085 0.487 1.706 0.103 0.215 0.223 0.419 0.37 0.606 0.015 0.018 0.037 0.051 0.048 0.049 0.02 -0.003 0.742 -1.642 0.804 -1.765 0.036 -0.07 0.03 -0.055 0.003 -0.112zm3.861 -0.913h-0.872a0.126 0.126 0 0 1 -0.116 -0.178l1.178 -2.625a0.025 0.025 0 0 0 -0.023 -0.035l-1.318 -0.003a0.148 0.148 0 0 1 -0.135 -0.21l0.876 -1.954a0.025 0.025 0 0 0 -0.023 -0.035h-1.56c-0.01 0 -0.02 0.006 -0.024 0.015l-0.926 2.068c-0.085 0.169 -0.314 0.634 -0.399 0.938a0.534 0.534 0 0 0 -0.02 0.191 0.46 0.46 0 0 0 0.23 0.378 0.981 0.981 0 0 0 0.46 0.119h0.59c0.041 0 -0.688 1.482 -0.834 1.972a0.53 0.53 0 0 0 -0.023 0.172 0.465 0.465 0 0 0 0.23 0.398c0.15 0.092 0.342 0.12 0.475 0.12l1.66 -0.001c0.01 0 0.02 -0.006 0.023 -0.015l0.575 -1.28a0.025 0.025 0 0 0 -0.024 -0.035zm-6.93 -4.937H3.1a0.032 0.032 0 0 0 -0.034 0.033c0 1.048 -0.01 2.795 -0.01 6.829 0 0.288 -0.269 0.262 -0.28 0.262h-0.74c-0.04 0.001 -0.044 0.004 -0.04 0.047 0.001 0.037 0.465 1.064 0.555 1.263 0.01 0.02 0.03 0.033 0.051 0.033 0.157 0.003 0.767 0.009 0.938 -0.014 0.153 -0.02 0.3 -0.06 0.438 -0.132 0.3 -0.156 0.49 -0.419 0.595 -0.765 0.052 -0.172 0.075 -0.353 0.075 -0.533 0.002 -2.33 0 -4.66 -0.007 -6.991a0.032 0.032 0 0 0 -0.032 -0.032zm11.784 6.896c0 -0.014 -0.01 -0.021 -0.024 -0.022h-1.465c-0.048 -0.001 -0.049 -0.002 -0.05 -0.049v-4.66c0 -0.072 -0.005 -0.07 0.07 -0.07h0.863c0.08 0 0.075 0.004 0.075 -0.074V8.393c0 -0.082 0.006 -0.076 -0.08 -0.076h-3.5c-0.064 0 -0.075 -0.006 -0.075 0.073v1.445c0 0.083 -0.006 0.077 0.08 0.077h0.854c0.075 0 0.07 -0.004 0.07 0.07v4.624c0 0.095 0.008 0.084 -0.085 0.084 -0.37 0 -1.11 -0.002 -1.304 0 -0.048 0.001 -0.06 0.03 -0.06 0.03l-0.697 1.519s-0.014 0.025 -0.008 0.036c0.006 0.01 0.013 0.008 0.058 0.008 1.748 0.003 3.495 0.002 5.243 0.002 0.03 -0.001 0.034 -0.006 0.035 -0.033v-1.539zm4.177 -3.43c0 0.013 -0.007 0.023 -0.02 0.024 -0.346 0.006 -0.692 0.004 -1.037 0.004 -0.014 -0.002 -0.022 -0.01 -0.022 -0.024 -0.005 -0.434 -0.007 -0.869 -0.01 -1.303 0 -0.072 -0.006 -0.071 0.07 -0.07l0.733 -0.003c0.041 0 0.081 0.002 0.12 0.015 0.093 0.025 0.16 0.107 0.165 0.204 0.006 0.431 0.002 1.153 0.001 1.153zm2.67 0.244a1.953 1.953 0 0 0 -0.883 -0.222h-0.18c-0.04 -0.001 -0.04 -0.003 -0.042 -0.04V10.21c0 -0.132 -0.007 -0.263 -0.025 -0.394a1.823 1.823 0 0 0 -0.153 -0.53 1.533 1.533 0 0 0 -0.677 -0.71 2.167 2.167 0 0 0 -1 -0.258c-0.153 -0.003 -0.567 0 -0.72 0 -0.07 0 -0.068 0.004 -0.068 -0.065V7.76c0 -0.031 -0.01 -0.041 -0.046 -0.039H17.93s-0.016 0 -0.023 0.007c-0.006 0.006 -0.008 0.012 -0.008 0.023v0.546c-0.008 0.036 -0.057 0.015 -0.082 0.022h-0.95c-0.022 0.002 -0.028 0.008 -0.03 0.032v1.481c0 0.09 -0.004 0.082 0.082 0.082h0.913c0.082 0 0.072 0.128 0.072 0.128v1.148s0.003 0.117 -0.06 0.117h-1.482c-0.068 0 -0.06 0.082 -0.06 0.082v1.445s-0.01 0.068 0.064 0.068h1.457c0.082 0 0.076 -0.006 0.076 0.079v3.225c0 0.088 -0.007 0.081 0.082 0.081h1.43c0.09 0 0.082 0.007 0.082 -0.08v-3.27c0 -0.029 0.006 -0.035 0.033 -0.035l2.323 -0.003c0.098 0 0.191 0.02 0.28 0.061a0.46 0.46 0 0 1 0.274 0.407c0.008 0.395 0.003 0.79 0.003 1.185 0 0.259 -0.107 0.367 -0.33 0.367h-1.218c-0.023 0.002 -0.029 0.008 -0.028 0.033 0.184 0.437 0.374 0.871 0.57 1.303a0.045 0.045 0 0 0 0.04 0.026c0.17 0.005 0.34 0.002 0.51 0.003 0.15 -0.002 0.517 0.004 0.666 -0.01a2.03 2.03 0 0 0 0.408 -0.075c0.59 -0.18 0.975 -0.698 0.976 -1.313v-1.981c0 -0.128 -0.01 -0.254 -0.034 -0.38 0 0.078 -0.029 -0.641 -0.724 -0.998z" fill="#ff0e00" stroke-width="1"></path></svg>
-
-                    <span>关注我们的小红书</span>
-
-                </a>
-
-                <a href="#" class="social-link-card">
-
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Tiktok-Logo--Streamline-Logos" height="24" width="24"><desc>Tiktok Logo Streamline Icon: https://streamlinehq.com</desc><path fill="#000000" d="M16 1h-3.5v15.5c0 1.5 -1.5 3 -3 3s-3 -0.5 -3 -3c0 -2 1.899 -3.339 3.5 -3V10c-6.12 0 -7 5 -7 6.5S3.977 23 9.5 23c4.522 0 6.5 -3.5 6.5 -6V8c1.146 1.018 2.922 1.357 5 1.5V6c-3.017 0 -5 -2.654 -5 -5Z" stroke-width="1"></path></svg>
-
-                    <span>在抖音上发现我们</span>
-
-                </a>
-
-             </div>
-
-        </section>
-
-    </main>
-
-
-
-    <footer class="main-footer" id="contact">
-
-        <div class="container">
-
-            <div class="footer-grid">
-
-                <div class="footer-col">
-
-                    <h4>和合開物</h4>
-
-                    <p>地址：中国北京市朝阳区艺术园路123号<br>
-
-                        电话：+86 10 1234 5678<br>
-
-                        邮箱：contact@chanju.com
-
-                    </p>
-
-                </div>
-
-                <div class="footer-col">
-
-                    <h4>快速链接</h4>
-
-                    <ul>
-
-                        <li><a href="#">首页</a></li>
-
-                        <li><a href="#products">产品系列</a></li>
-
-                        <li><a href="#about">关于我们</a></li>
-
-                        <li><a href="#collection">设计精选</a></li>
-
-                    </ul>
-
-                </div>
-
-                 <div class="footer-col">
-
-                    <h4>帮助中心</h4>
-
-                    <ul>
-
-                        <li><a href="#">联系我们</a></li>
-
-                        <li><a href="#">配送信息</a></li>
-
-                        <li><a href="#">退换货政策</a></li>
-
-                        <li><a href="#">常见问题</a></li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
-            <div class="footer-bottom">
-
-                <p>&copy; 2025 和合開物 版权所有</p>
-
-            </div>
-
-        </div>
-
-    </footer>
-
-
-
-    <div class="scroll-buttons">
-
-        <button class="scroll-btn" id="scroll-to-top" aria-label="回到顶部">
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
-
-        </button>
-
-        <button class="scroll-btn" id="scroll-to-bottom" aria-label="回到底部">
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-
-        </button>
-
-    </div>
-
-
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
-
-    <script src="script.js"></script>
-
+    <header class="main-header" id="main-header">
+        <nav class="navbar">
+            <a href="#" class="logo">和合·開物</a>
+            <div class="main-nav">
+                <ul>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#shop">商城</a></li>
+                    <li class="dropdown">
+                        <a href="#products">产品系列</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#products">像素榫卯</a></li>
+                            <li><a href="#products">生肖礼品</a></li>
+                            <li><a href="#products">博物馆文创</a></li>
+                            <li><a href="#products">家具</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#collection">设计师作品集</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <a href="#" class="active">中</a>
+                    <a href="#">EN</a>
+                    <a href="#">JP</a>
+                </div>
+            </div>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <div class="mobile-nav">
+             <ul>
+                 <li><a href="#about">关于我们</a></li>
+                 <li><a href="#shop">商城</a></li>
+                 <li class="mobile-dropdown">
+                     <a href="#products" class="dropdown-toggle">产品系列</a>
+                     <ul class="mobile-submenu">
+                         <li><a href="#products">像素榫卯</a></li>
+                         <li><a href="#products">生肖礼品</a></li>
+                         <li><a href="#products">博物馆文创</a></li>
+                         <li><a href="#products">家具</a></li>
+                     </ul>
+                 </li>
+                 <li><a href="#">BLOG</a></li>
+                 <li><a href="#collection">设计师作品集</a></li>
+                 <li class="mobile-lang-switcher">
+                     <a href="#" class="active">中文</a>
+                     <a href="#">English</a>
+                     <a href="#">日本語</a>
+                 </li>
+             </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-slider-section">
+            <div class="swiper hero-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://www.hehekaiwu.com/background.webp" alt="榫卯技艺">
+                        <div class="hero-content">
+                            <h2>承古融今，大匠之心</h2>
+                            <p>传承千年榫卯技艺，对话时代审美</p>
+                            <a href="#products" class="hero-btn">探索榫卯之美</a>
+                        </div>
+                         <div class="image-credit">承古融今，大匠之心</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://www.hehekaiwu.com/image/background/hehekaiwu-banner2.webp" alt="榫卯拼搭">
+                        <div class="hero-content">
+                            <h2>智慧启迪，乐在其中</h2>
+                            <p>玩转榫卯拼搭，探索无限可能</p>
+                            <a href="#about" class="hero-btn">立即体验拼装乐趣</a>
+                        </div>
+                         <div class="image-credit">智慧启迪，乐在其中</div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section class="product-section" id="products">
+            <div class="container">
+                <div class="product-tabs">
+                    <button class="tab-btn active" data-target="pixel">像素榫卯</button>
+                    <button class="tab-btn" data-target="zodiac">生肖礼品</button>
+                    <button class="tab-btn" data-target="museum">博物馆文创</button>
+                    <button class="tab-btn" data-target="furniture">家具</button>
+                </div>
+
+                <div id="pixel" class="product-content active">
+                    <div class="product-grid">
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>像素榫卯·椅</h3><p>传统工艺与现代像素美学的结合。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>像素榫卯·桌</h3><p>简约而不简单，为您的空间增添趣味。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>像素榫卯·灯</h3><p>光与影的像素游戏。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>像素榫卯·架</h3><p>模块化设计，自由组合。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>像素榫卯·凳</h3><p>小巧玲珑，随处安放。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>像素榫卯·屏</h3><p>虚实之间的东方意境。</p></div>
+                    </div>
+                </div>
+
+                <div id="zodiac" class="product-content">
+                     <div class="product-grid">
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>生肖礼品·鼠</h3><p>机智灵动，开启新年好运。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>生肖礼品·牛</h3><p>勤恳踏实，稳重前行。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>生肖礼品·虎</h3><p>威猛雄壮，尽显王者风范。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>生肖礼品·兔</h3><p>温顺可爱，带来祥和与安宁。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>生肖礼品·龙</h3><p>飞龙在天，寓意吉祥尊贵。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>生肖礼品·蛇</h3><p>智慧的化身，神秘而优雅。</p></div>
+                    </div>
+                </div>
+
+                <div id="museum" class="product-content">
+                     <div class="product-grid">
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>博物馆文创1</h3><p>机智灵动，开启新年好运。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>博物馆文创2</h3><p>勤恳踏实，稳重前行。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>博物馆文创3</h3><p>威猛雄壮，尽显王者风范。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>博物馆文创4</h3><p>温顺可爱，带来祥和与安宁。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>博物馆文创5</h3><p>飞龙在天，寓意吉祥尊贵。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>博物馆文创6</h3><p>智慧的化身，神秘而优雅。</p></div>
+                    </div>
+                </div>
+
+                 <div id="furniture" class="product-content">
+                    <div class="product-grid">
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>原木沙发</h3><p>回归自然，享受舒适与宁静。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>禅意睡床</h3><p>简约设计，营造安宁的睡眠环境。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>茶几</h3><p>一茶一世界，一几一人生。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>衣柜</h3><p>极简收纳，让生活井然有序。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>单人椅</h3><p>一个人的角落，静享时光。</p></div>
+                        <div class="product-card"><img src="https://www.hehekaiwu.com/background.webp" alt="产品图片"><h3>餐桌</h3><p>承载家人欢聚的温暖时刻。</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section" style="padding:0;">
+            <div class="features-grid">
+                <div class="feature-item"><img src="https://www.hehekaiwu.com/background.webp" alt="feature 1"><span>匠心设计</span></div>
+                <div class="feature-item"><img src="https://www.hehekaiwu.com/background.webp" alt="feature 2"><span>天然材质</span></div>
+                <div class="feature-item"><img src="https://www.hehekaiwu.com/background.webp" alt="feature 3"><span>精湛工艺</span></div>
+                <div class="feature-item"><img src="https://www.hehekaiwu.com/background.webp" alt="feature 4"><span>持续创新</span></div>
+            </div>
+        </section>
+
+        <section class="intro-section" id="about">
+            <div class="container">
+                <div class="intro-image">
+                    <img src="https://www.hehekaiwu.com/image/others/about-hehekaiwu.webp" alt="关于和合开物">
+                </div>
+                <div class="intro-text">
+                    <h2>关于和合·開物</h2>
+                    <p>和合开物®是一个专注于榫卯创意的文创品牌，以现代设计语言重新诠释传统工艺，致力于将中国榫卯的智慧美学融入当代生活。我们深度携手各大博物馆，挖掘文物内涵，将历史与互动体验巧妙结合，所打造的系列文创产品在业内广受赞誉。</p>
+                    <p>2024年，我们重磅推出独创的“像素榫卯”结构，颠覆性地融合了结构与像素几何视觉的完美结合，开创了全新的拼装体验，旨在让每一个人都能轻松感受榫卯的精妙，在创意世界里见证古老智慧的无限可能。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-parallax-section">
+                    <div class="video-wrapper">
+                        <img src="https://www.hehekaiwu.com/background.webp" class="video-poster" alt="拼装玩具">
+                    </div>
+                    <div class="hero-content">
+                        <h2>探索榫卯的无限可能</h2>
+                        <p>在每一次拼接中，感受传统工艺的温度与智慧。</p>
+                    </div>
+                </section>
+
+        <section class="collection-section" id="collection">
+            <div class="container">
+                <div class="section-header">
+                    <h2>设计师作品集</h2>
+                    <p>我们从世界各地的文化与自然中汲取灵感，每一件作品都是一次对美的探索和诠释。</p>
+                </div>
+
+                <div class="swiper collection-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 1"><h3>光之韵</h3><p>灵感源于日式纸灯笼。</p></div>
+                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 2"><h3>空之境</h3><p>留白，是设计的最高境界。</p></div>
+                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 3"><h3>木之语</h3><p>倾听每一寸木材的呼吸。</p></div>
+                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 4"><h3>石之坚</h3><p>沉稳而富有力量感。</p></div>
+                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 5"><h3>竹之节</h3><p>东方君子的气节与风骨。</p></div>
+                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 6"><h3>水之形</h3><p>流动线条，无常之美。</p></div>
+                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 7"><h3>土之朴</h3><p>返璞归真，陶瓷的温度。</p></div>
+                        <div class="swiper-slide collection-card"><img src="https://www.hehekaiwu.com/background.webp" alt="collection 8"><h3>金之锐</h3><p>现代金属元素的点睛之笔。</p></div>
+                    </div>
+                </div>
+                <div class="collection-nav">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-links-section">
+             <div class="container">
+                <a href="#" class="social-link-card">
+                  <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="Xiaohongshu--Streamline-Simple-Icons" height="40" width="40"><desc>Xiaohongshu Streamline Icon: https://streamlinehq.com</desc><title>Xiaohongshu</title><path d="M22.405 9.879c0.002 0.016 0.01 0.02 0.07 0.019h0.725a0.797 0.797 0 0 0 0.78 -0.972 0.794 0.794 0 0 0 -0.884 -0.618 0.795 0.795 0 0 0 -0.692 0.794c0 0.101 -0.002 0.666 0.001 0.777zm-11.509 4.808c-0.203 0.001 -1.353 0.004 -1.685 0.003a2.528 2.528 0 0 1 -0.766 -0.126 0.025 0.025 0 0 0 -0.03 0.014L7.7 16.127a0.025 0.025 0 0 0 0.01 0.032c0.111 0.06 0.336 0.124 0.495 0.124 0.66 0.01 1.32 0.002 1.981 0 0.01 0 0.02 -0.006 0.023 -0.015l0.712 -1.545a0.025 0.025 0 0 0 -0.024 -0.036zM0.477 9.91c-0.071 0 -0.076 0.002 -0.076 0.01a0.834 0.834 0 0 0 -0.01 0.08c-0.027 0.397 -0.038 0.495 -0.234 3.06 -0.012 0.24 -0.034 0.389 -0.135 0.607 -0.026 0.057 -0.033 0.042 0.003 0.112 0.046 0.092 0.681 1.523 0.787 1.74 0.008 0.015 0.011 0.02 0.017 0.02 0.008 0 0.033 -0.026 0.047 -0.044 0.147 -0.187 0.268 -0.391 0.371 -0.606 0.306 -0.635 0.44 -1.325 0.486 -1.706 0.014 -0.11 0.021 -0.22 0.03 -0.33l0.204 -2.616 0.022 -0.293c0.003 -0.029 0 -0.033 -0.03 -0.034zm7.203 3.757a1.427 1.427 0 0 1 -0.135 -0.607c-0.004 -0.084 -0.031 -0.39 -0.235 -3.06a0.443 0.443 0 0 0 -0.01 -0.082c-0.004 -0.011 -0.052 -0.008 -0.076 -0.008h-1.48c-0.03 0.001 -0.034 0.005 -0.03 0.034l0.021 0.293c0.076 0.982 0.153 1.964 0.233 2.946 0.05 0.4 0.186 1.085 0.487 1.706 0.103 0.215 0.223 0.419 0.37 0.606 0.015 0.018 0.037 0.051 0.048 0.049 0.02 -0.003 0.742 -1.642 0.804 -1.765 0.036 -0.07 0.03 -0.055 0.003 -0.112zm3.861 -0.913h-0.872a0.126 0.126 0 0 1 -0.116 -0.178l1.178 -2.625a0.025 0.025 0 0 0 -0.023 -0.035l-1.318 -0.003a0.148 0.148 0 0 1 -0.135 -0.21l0.876 -1.954a0.025 0.025 0 0 0 -0.023 -0.035h-1.56c-0.01 0 -0.02 0.006 -0.024 0.015l-0.926 2.068c-0.085 0.169 -0.314 0.634 -0.399 0.938a0.534 0.534 0 0 0 -0.02 0.191 0.46 0.46 0 0 0 0.23 0.378 0.981 0.981 0 0 0 0.46 0.119h0.59c0.041 0 -0.688 1.482 -0.834 1.972a0.53 0.53 0 0 0 -0.023 0.172 0.465 0.465 0 0 0 0.23 0.398c0.15 0.092 0.342 0.12 0.475 0.12l1.66 -0.001c0.01 0 0.02 -0.006 0.023 -0.015l0.575 -1.28a0.025 0.025 0 0 0 -0.024 -0.035zm-6.93 -4.937H3.1a0.032 0.032 0 0 0 -0.034 0.033c0 1.048 -0.01 2.795 -0.01 6.829 0 0.288 -0.269 0.262 -0.28 0.262h-0.74c-0.04 0.001 -0.044 0.004 -0.04 0.047 0.001 0.037 0.465 1.064 0.555 1.263 0.01 0.02 0.03 0.033 0.051 0.033 0.157 0.003 0.767 0.009 0.938 -0.014 0.153 -0.02 0.3 -0.06 0.438 -0.132 0.3 -0.156 0.49 -0.419 0.595 -0.765 0.052 -0.172 0.075 -0.353 0.075 -0.533 0.002 -2.33 0 -4.66 -0.007 -6.991a0.032 0.032 0 0 0 -0.032 -0.032zm11.784 6.896c0 -0.014 -0.01 -0.021 -0.024 -0.022h-1.465c-0.048 -0.001 -0.049 -0.002 -0.05 -0.049v-4.66c0 -0.072 -0.005 -0.07 0.07 -0.07h0.863c0.08 0 0.075 0.004 0.075 -0.074V8.393c0 -0.082 0.006 -0.076 -0.08 -0.076h-3.5c-0.064 0 -0.075 -0.006 -0.075 0.073v1.445c0 0.083 -0.006 0.077 0.08 0.077h0.854c0.075 0 0.07 -0.004 0.07 0.07v4.624c0 0.095 0.008 0.084 -0.085 0.084 -0.37 0 -1.11 -0.002 -1.304 0 -0.048 0.001 -0.06 0.03 -0.06 0.03l-0.697 1.519s-0.014 0.025 -0.008 0.036c0.006 0.01 0.013 0.008 0.058 0.008 1.748 0.003 3.495 0.002 5.243 0.002 0.03 -0.001 0.034 -0.006 0.035 -0.033v-1.539zm4.177 -3.43c0 0.013 -0.007 0.023 -0.02 0.024 -0.346 0.006 -0.692 0.004 -1.037 0.004 -0.014 -0.002 -0.022 -0.01 -0.022 -0.024 -0.005 -0.434 -0.007 -0.869 -0.01 -1.303 0 -0.072 -0.006 -0.071 0.07 -0.07l0.733 -0.003c0.041 0 0.081 0.002 0.12 0.015 0.093 0.025 0.16 0.107 0.165 0.204 0.006 0.431 0.002 1.153 0.001 1.153zm2.67 0.244a1.953 1.953 0 0 0 -0.883 -0.222h-0.18c-0.04 -0.001 -0.04 -0.003 -0.042 -0.04V10.21c0 -0.132 -0.007 -0.263 -0.025 -0.394a1.823 1.823 0 0 0 -0.153 -0.53 1.533 1.533 0 0 0 -0.677 -0.71 2.167 2.167 0 0 0 -1 -0.258c-0.153 -0.003 -0.567 0 -0.72 0 -0.07 0 -0.068 0.004 -0.068 -0.065V7.76c0 -0.031 -0.01 -0.041 -0.046 -0.039H17.93s-0.016 0 -0.023 0.007c-0.006 0.006 -0.008 0.012 -0.008 0.023v0.546c-0.008 0.036 -0.057 0.015 -0.082 0.022h-0.95c-0.022 0.002 -0.028 0.008 -0.03 0.032v1.481c0 0.09 -0.004 0.082 0.082 0.082h0.913c0.082 0 0.072 0.128 0.072 0.128v1.148s0.003 0.117 -0.06 0.117h-1.482c-0.068 0 -0.06 0.082 -0.06 0.082v1.445s-0.01 0.068 0.064 0.068h1.457c0.082 0 0.076 -0.006 0.076 0.079v3.225c0 0.088 -0.007 0.081 0.082 0.081h1.43c0.09 0 0.082 0.007 0.082 -0.08v-3.27c0 -0.029 0.006 -0.035 0.033 -0.035l2.323 -0.003c0.098 0 0.191 0.02 0.28 0.061a0.46 0.46 0 0 1 0.274 0.407c0.008 0.395 0.003 0.79 0.003 1.185 0 0.259 -0.107 0.367 -0.33 0.367h-1.218c-0.023 0.002 -0.029 0.008 -0.028 0.033 0.184 0.437 0.374 0.871 0.57 1.303a0.045 0.045 0 0 0 0.04 0.026c0.17 0.005 0.34 0.002 0.51 0.003 0.15 -0.002 0.517 0.004 0.666 -0.01a2.03 2.03 0 0 0 0.408 -0.075c0.59 -0.18 0.975 -0.698 0.976 -1.313v-1.981c0 -0.128 -0.01 -0.254 -0.034 -0.38 0 0.078 -0.029 -0.641 -0.724 -0.998z" fill="#ff0e00" stroke-width="1"></path></svg>
+                    <span>关注我们的小红书</span>
+                </a>
+                <a href="#" class="social-link-card">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Tiktok-Logo--Streamline-Logos" height="24" width="24"><desc>Tiktok Logo Streamline Icon: https://streamlinehq.com</desc><path fill="#000000" d="M16 1h-3.5v15.5c0 1.5 -1.5 3 -3 3s-3 -0.5 -3 -3c0 -2 1.899 -3.339 3.5 -3V10c-6.12 0 -7 5 -7 6.5S3.977 23 9.5 23c4.522 0 6.5 -3.5 6.5 -6V8c1.146 1.018 2.922 1.357 5 1.5V6c-3.017 0 -5 -2.654 -5 -5Z" stroke-width="1"></path></svg>
+                    <span>在抖音上发现我们</span>
+                </a>
+             </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>和合·開物</h4>
+                    <p>地址：中国北京市朝阳区艺术园路123号<br>
+                        电话：+86 10 1234 5678<br>
+                        邮箱：contact@chanju.com
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#products">产品系列</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#collection">设计精选</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col">
+                    <h4>帮助中心</h4>
+                    <ul>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">配送信息</a></li>
+                        <li><a href="#">退换货政策</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 和合·開物 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-buttons">
+        <button class="scroll-btn" id="scroll-to-top" aria-label="回到顶部">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+        </button>
+        <button class="scroll-btn" id="scroll-to-bottom" aria-label="回到底部">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
