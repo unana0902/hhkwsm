@@ -75,6 +75,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+        const lightbox = GLightbox({
+        selector: '.glightbox', 
+        touchNavigation: true,
+        loop: true,     
+        autoplayVideos: true, 
+    });
+
+});
+
     const scrollToTopBtn = document.getElementById('scroll-to-top');
     const scrollToBottomBtn = document.getElementById('scroll-to-bottom');
 
