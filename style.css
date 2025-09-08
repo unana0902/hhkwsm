@@ -438,26 +438,16 @@ h1, h2, h3 {
 }
 
 .video-parallax-section {
+    background-image: url('https://www.hehekaiwu.com/background.webp');
     height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    overflow: hidden;
-}
-
-.video-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
     display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.video-parallax-section .video-poster {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .collection-section {
